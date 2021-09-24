@@ -7,17 +7,17 @@
 	<link rel="icon" type="image/x-icon" href="/favicon.png" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Welcome to Pivot Up^</title>
-	<style>
-		html,body {
-			min-height: 100vh;
-		}
+	<link rel="stylesheet" href={Astro.resolve("./index.css")}>
 
-		body {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-	</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1P28986HWC"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-1P28986HWC');
+	</script>
 </head>
 
 <body>

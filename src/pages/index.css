@@ -1,0 +1,12 @@
+@import "./reset.css";
+
+body {
+    min-height: 100vh;
+    padding: 50px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
