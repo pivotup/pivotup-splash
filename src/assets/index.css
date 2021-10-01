@@ -10,3 +10,36 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.logo {
+    display: block;
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    display: table;
+    font-size: 16px;
+    font-weight: 300;
+    background: #efefefef;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0 0;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    transition: border .5s cubic-bezier(.245,0,.245,1);
+}
+
+nav a svg {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav a:hover {
+    border-color: currentColor;
+    transition: border .5s cubic-bezier(.245,0,.245,1);
+}
