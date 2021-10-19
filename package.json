@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "serve": "astro dev",
     "build": "astro build",
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.20.7"
+    "astro": "^0.20.12"
   }
 }
