@@ -23,28 +23,31 @@ main {
 header nav {
     display: flex;
     flex-wrap: wrap;
-}
+    justify-items: right;
 
-header nav a {
-    text-decoration: none;
-    color: #666;
-    height: 50px;
-    display: inline-block;
-    flex: 1;
-    line-height: 50px;
-    text-transform: uppercase;
-    font-family: 'Inter';
-    font-style:  normal;
-    font-weight: 200;
-    text-align: center;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    min-width: 160px;
-}
+    a {
+        text-decoration: none;
+        color: #9a988b;
+        height: 80px;
+        display: inline-block;
+        line-height: 80px;
+        font-family: 'Inter';
+        font-style:  normal;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding: 0 60px;
+        border-bottom: 1px solid #eee;
 
-header nav a:hover {
-    color: #FFF;
-    background: #666;
+        &:first-child {
+            margin-left: auto;
+        }
+
+        &:hover {
+            color: #444340;
+            border-bottom: 1px solid currentColor;
+        }
+    }
 }
 
 main nav a {
@@ -73,4 +76,9 @@ main nav a svg {
 main nav a:hover {
     border-color: currentColor;
     transition: border .5s cubic-bezier(.245,0,.245,1);
+}
+
+.netlify-identity-menu {
+    display: flex;
+    border-left: 1px solid #eee;
 }

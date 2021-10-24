@@ -1,7 +1,7 @@
 ---
 import "../assets/inter/inter.css";
-import "../assets/index.css";
 import "../assets/reset.css";
+import "../assets/index.scss";
 ---
 <html lang="en">
 
@@ -21,6 +21,7 @@ import "../assets/reset.css";
 
 		gtag('config', 'G-1P28986HWC');
 	</script>
+	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -31,6 +32,11 @@ import "../assets/reset.css";
 			<a href="https://www.youtube.com/playlist?list=PLU9It8__3uqlPPIbyyQ_ABm0x6wIxYs8m" target="_blank" rel="noreferrer">Cyber</a>
 			<a href="https://www.youtube.com/playlist?list=PLU9It8__3uqmz-htqhIwXfcl4rA2vq3-u" target="_blank" rel="noreferrer">Code</a>
 			<a href="https://www.youtube.com/playlist?list=PLU9It8__3uqk7xrMCp_fbdfOo03oE6UIx" target="_blank" rel="noreferrer">Poker</a>
+			<!-- Add a menu:
+                Log in / Sign up - when the user is not logged in
+                Username / Log out - when the user is logged in
+            -->
+            <div data-netlify-identity-menu></div>
 		</nav>
 	</header>
 	<main role="main">
