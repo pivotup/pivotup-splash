@@ -1,0 +1,66 @@
+---
+import "../assets/inter/inter.css";
+import "../assets/reset.css";
+import "../assets/index.scss";
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+---
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/x-icon" href="/favicon.png" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="Welcome to Pivot Up^" />
+	<title>Welcome to Pivot Up^</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1P28986HWC"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-1P28986HWC');
+	</script>
+	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+	<Header />
+	<main role="main">
+		<h1 class="text-7xl font-extralight">Pivot <strong>Up^</strong></h1>
+		<h2 class="text-5xl font-extralight">Contact</h2>
+
+		<div class="w-full max-w-xs mt-20">
+			<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" name="contact" method="POST" data-netlify="true">
+				<div class="mb-4">
+					<label class="block text-gray-700 text-sm mb-2" for="username">
+						Your Name:
+					</label>
+					<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" />
+				</div>
+				<div class="mb-6">
+					<label class="block text-gray-700 text-sm mb-2" for="password">
+						Your Email:
+					</label>
+					<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="email" />
+				</div>
+
+				<p>
+					<label class="block text-gray-700 text-sm mb-2" for="password">
+						Message:
+					</label>
+					<textarea name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+				</p>
+				<button class="mt-10 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+					Send
+				</button>
+			</form>
+		</div>
+	</main>
+	<Footer />
+</body>
+</html>
