@@ -25,6 +25,7 @@ header nav {
     flex-wrap: wrap;
     justify-items: right;
 
+    .netlify-identity-user-details,
     a {
         text-decoration: none;
         color: #9a988b;
@@ -64,18 +65,18 @@ main nav a {
     padding: 0 20px;
     border: 2px solid transparent;
     transition: border .5s cubic-bezier(.245,0,.245,1);
-}
 
-main nav a svg {
-    height: 20px;
-    width: 20px;
-    display: inline-block;
-    vertical-align: middle;
-}
+    svg {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
 
-main nav a:hover {
-    border-color: currentColor;
-    transition: border .5s cubic-bezier(.245,0,.245,1);
+    &:hover {
+        border-color: currentColor;
+        transition: border .5s cubic-bezier(.245,0,.245,1);
+    }
 }
 
 .netlify-identity-menu {
