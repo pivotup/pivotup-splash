@@ -1,0 +1,37 @@
+---
+import "../assets/index.scss";
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+---
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/x-icon" href="/favicon.png" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="Welcome to Pivot Up^" />
+	<title>Welcome to Pivot Up^</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1P28986HWC"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-1P28986HWC');
+	</script>
+	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+	<Header />
+	<main role="main">
+		<h1 class="text-7xl font-extralight">Pivot <strong>Up^</strong></h1>
+		<h2 class="text-5xl font-extralight">About</h2>
+    </main>
+	<Footer />
+</body>
+</html>
