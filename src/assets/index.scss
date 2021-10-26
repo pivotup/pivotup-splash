@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './inter/inter';
+
 html { font-family: 'Inter', sans-serif; }
 
 @supports (font-variation-settings: normal) {
@@ -38,7 +40,6 @@ header nav {
         font-weight: 400;
         text-align: center;
         padding: 0 60px;
-        border-bottom: 1px solid #eee;
     }
 
     a {
@@ -51,6 +52,14 @@ header nav {
             border-bottom: 1px solid currentColor;
         }
     }
+}
+
+header nav a {
+    border-bottom: 1px solid #eee;
+}
+
+footer nav a {
+    border-top: 1px solid #eee;
 }
 
 main nav a {
